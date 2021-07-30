@@ -62,10 +62,9 @@ describe('keyboardSequence should', () => {
         expect(result).toBe(value);
     });
     
-    test('return 333666 6660 022 2777 when value is foo bar', () => {
+    test('return 333666 666022 2777 when value is foo bar', () => {
         // Arrenge
         const str = 'foo bar';
-        //const test = '333666 6660 022 2777';
         const value = '333666 666022 2777';
         const keyboard = new Keyboard();
         // Act
