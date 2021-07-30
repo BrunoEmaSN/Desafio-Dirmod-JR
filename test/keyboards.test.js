@@ -1,15 +1,17 @@
 import Keyboard from "../utils/keyboard.js";
-
-test('buildKeys should return a length 27 of 27', () => {
-    // Arrenge
-    const length = 27;
-    const keyboard = new Keyboard();
-    // Act
-    let keyboards = keyboard.buildKeys();
-    let result = Object.keys(keyboards).length;
-    // Assert
-    expect(result).toBe(length);
+describe('buildKeys should', () => {
+    test('return an array with length 27 of 27', () => {
+        // Arrenge
+        const length = 27;
+        const keyboard = new Keyboard();
+        // Act
+        let keyboards = keyboard.keyboards;
+        let result = Object.keys(keyboards).length;
+        // Assert
+        expect(result).toBe(length);
+    });
 });
+
 
 describe('repeat should', () => {
     test('return 222 when i == 2 and j == 3', () => {
@@ -44,7 +46,7 @@ describe('keyboardSequence should', () => {
         const value = '44 444';
         const keyboard = new Keyboard();
         // Act
-        let result = keyboard.keyboardSequence(str, keyboard.buildKeys());
+        let result = keyboard.keyboardSequence(str, keyboard.keyboards);
         // Assert
         expect(result).toBe(value);
     });
@@ -55,7 +57,7 @@ describe('keyboardSequence should', () => {
         const value = '999337777';
         const keyboard = new Keyboard();
         // Act
-        let result = keyboard.keyboardSequence(str, keyboard.buildKeys());
+        let result = keyboard.keyboardSequence(str, keyboard.keyboards);
         // Assert
         expect(result).toBe(value);
     });
@@ -67,7 +69,7 @@ describe('keyboardSequence should', () => {
         const value = '333666 666022 2777';
         const keyboard = new Keyboard();
         // Act
-        let result = keyboard.keyboardSequence(str, keyboard.buildKeys());
+        let result = keyboard.keyboardSequence(str, keyboard.keyboards);
         // Assert
         expect(result).toBe(value);
     });
@@ -78,7 +80,7 @@ describe('keyboardSequence should', () => {
         const value = '4433555 555666096667775553';
         const keyboard = new Keyboard();
         // Act
-        let result = keyboard.keyboardSequence(str, keyboard.buildKeys());
+        let result = keyboard.keyboardSequence(str, keyboard.keyboards);
         // Assert
         expect(result).toBe(value);
     });
