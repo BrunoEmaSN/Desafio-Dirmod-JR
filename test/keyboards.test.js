@@ -46,7 +46,7 @@ describe('keyboardSequence should', () => {
         const value = '44 444';
         const keyboard = new Keyboard();
         // Act
-        let result = keyboard.keyboardSequence(str, keyboard.keyboards);
+        let result = keyboard.keyboardSequence(str);
         // Assert
         expect(result).toBe(value);
     });
@@ -57,7 +57,7 @@ describe('keyboardSequence should', () => {
         const value = '999337777';
         const keyboard = new Keyboard();
         // Act
-        let result = keyboard.keyboardSequence(str, keyboard.keyboards);
+        let result = keyboard.keyboardSequence(str);
         // Assert
         expect(result).toBe(value);
     });
@@ -68,7 +68,7 @@ describe('keyboardSequence should', () => {
         const value = '333666 666022 2777';
         const keyboard = new Keyboard();
         // Act
-        let result = keyboard.keyboardSequence(str, keyboard.keyboards);
+        let result = keyboard.keyboardSequence(str);
         // Assert
         expect(result).toBe(value);
     });
@@ -79,7 +79,7 @@ describe('keyboardSequence should', () => {
         const value = '4433555 555666096667775553';
         const keyboard = new Keyboard();
         // Act
-        let result = keyboard.keyboardSequence(str, keyboard.keyboards);
+        let result = keyboard.keyboardSequence(str);
         // Assert
         expect(result).toBe(value);
     });

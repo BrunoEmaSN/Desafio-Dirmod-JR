@@ -35,8 +35,9 @@ export default class Keyboard {
         return values;
     }
 
-    keyboardSequence(str, alphabet){
+    keyboardSequence(str){
         let result = '';
+        let alphabet = this._keyboards;
         let letters = str.toUpperCase().split('');
         for(let i = 0; i < letters.length; i++){
             if(i > 0){
