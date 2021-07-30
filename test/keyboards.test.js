@@ -1,0 +1,85 @@
+import Keyboard from "../utils/keyboard.js";
+
+test('buildKeys should return a length 27 of 27', () => {
+    // Arrenge
+    const length = 27;
+    const keyboard = new Keyboard();
+    // Act
+    let keyboards = keyboard.buildKeys();
+    let result = Object.keys(keyboards).length;
+    // Assert
+    expect(result).toBe(length);
+});
+
+describe('repeat should', () => {
+    test('return 222 when i == 2 and j == 3', () => {
+        // Arrenge
+        let i = 2;
+        let j = 3;
+        let value = '222';
+        const keyboard = new Keyboard();
+        // Act
+        let result = keyboard.repeatValues(i, j);
+        // Assert
+        expect(result).toBe(value);
+    });
+
+    test('return 44 when i == 4 and j == 2', () => {
+        // Arrenge
+        let i = 4;
+        let j = 2;
+        let value = '44';
+        const keyboard = new Keyboard();
+        // Act
+        let result = keyboard.repeatValues(i, j);
+        // Assert
+        expect(result).toBe(value);
+    });
+});
+
+describe('keyboardSequence should', () => {
+    test('return 44 444 when value is hi', () => {
+        // Arrenge
+        const str = 'hi';
+        const value = '44 444';
+        const keyboard = new Keyboard();
+        // Act
+        let result = keyboard.keyboardSequence(str, keyboard.buildKeys());
+        // Assert
+        expect(result).toBe(value);
+    });
+    
+    test('return 999337777 when value is yes', () => {
+        // Arrenge
+        const str = 'yes';
+        const value = '999337777';
+        const keyboard = new Keyboard();
+        // Act
+        let result = keyboard.keyboardSequence(str, keyboard.buildKeys());
+        // Assert
+        expect(result).toBe(value);
+    });
+    
+    test('return 333666 6660 022 2777 when value is foo bar', () => {
+        // Arrenge
+        const str = 'foo bar';
+        //const test = '333666 6660 022 2777';
+        const value = '333666 666022 2777';
+        const keyboard = new Keyboard();
+        // Act
+        let result = keyboard.keyboardSequence(str, keyboard.buildKeys());
+        // Assert
+        expect(result).toBe(value);
+    });
+    
+    test('return 4433555 555666096667775553 when value is hello world', () => {
+        // Arrenge
+        const str = 'hello world';
+        const value = '4433555 555666096667775553';
+        const keyboard = new Keyboard();
+        // Act
+        let result = keyboard.keyboardSequence(str, keyboard.buildKeys());
+        // Assert
+        expect(result).toBe(value);
+    });
+});
