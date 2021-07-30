@@ -1,6 +1,10 @@
 export default class Keyboard {
     constructor(){
-        this.keyboards = this.buildKeys();
+        this._keyboards = this.buildKeys();
+    }
+
+    get keyboards() {
+        return this._keyboards;
     }
 
     buildKeys(){
