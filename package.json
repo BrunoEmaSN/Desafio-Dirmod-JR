@@ -19,5 +19,8 @@
     "@types/jest": "^26.0.24",
     "babel-jest": "^27.0.6",
     "jest": "^27.0.6"
+  },
+  "dependencies": {
+    "inquirer": "^8.1.2"
   }
 }
