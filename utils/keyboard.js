@@ -36,10 +36,12 @@ export default class Keyboard {
     }
 
     keyboardSequence(str){
+        if(str.length === 0) throw new Error('empty value');
         let result = '';
         let alphabet = this._keyboards;
         let letters = str.toUpperCase().split('');
         for(let i = 0; i < letters.length; i++){
+            if(alphabet[letters[i]] === undefined) throw new Error('only letters are allowed');
             if(i > 0){
                 let key1 = alphabet[letters[i]].key;
                 let key2 = alphabet[letters[i - 1]].key;

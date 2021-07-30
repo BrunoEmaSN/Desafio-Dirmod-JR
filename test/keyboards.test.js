@@ -83,4 +83,22 @@ describe('keyboardSequence should', () => {
         // Assert
         expect(result).toBe(value);
     });
+
+    test('report Error when value contains a char that not is letter', () => {
+        const value = 'h3ll0 w0rld';
+        const keyboard = new Keyboard();
+    
+        expect(() => {
+            keyboard.keyboardSequence(value)
+        }).toThrow(Error);
+    });
+
+    test('report Error when empty value', () => {
+        const value = '';
+        const keyboard = new Keyboard();
+    
+        expect(() => {
+            keyboard.keyboardSequence(value)
+        }).toThrow(Error);
+    });
 });
