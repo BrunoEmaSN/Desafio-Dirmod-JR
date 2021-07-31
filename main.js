@@ -8,7 +8,7 @@ const main = () => {
         message: 'write a message (only letters):'
     }).then(answer => {
         let result = keyboard.keyboardSequence(answer.res);
-        console.log(result);
+        console.log(`the sequence is: ${result}`);
     });
 }
 
