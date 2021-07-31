@@ -16,15 +16,18 @@ after cloning the repository, install the following dependencies
 #### Jest
 Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 for more information [clic here](https://jestjs.io/)
+
 `npm install --save-dev jest`
 
 #### Babel
 Babel is a JavaScript compiler
 for more information [clic here](https://babeljs.io/)
+
 `npm install --save-dev jest babel-jest @babel/preset-env`
 `npm install --save-dev @babel/core @babel/node`
 
 #### Inquirer.JS
 A collection of common interactive command line user interfaces.
 for more information [clic here](https://github.com/SBoudrias/Inquirer.js)
+
 `npm i inquirer`
