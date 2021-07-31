@@ -10,9 +10,14 @@ export default class Keyboard {
     buildKeys(){
         const keyboards = new Object();
         let count = 0;
+        let typeKeyboard;
         for(let i = 2; i <= 9; i++){
-            if(i == 7 || i == 9) let typeKeyboard = 4;
-            else let typeKeyboard = 3;
+            if(i == 7 || i == 9){
+                typeKeyboard = 4;
+            }
+            else{
+                typeKeyboard = 3;
+            }
             for(let j = 1; j <= typeKeyboard; j++){
                 let letters = (count + 10).toString(36).toUpperCase();
                 keyboards[letters] = {
