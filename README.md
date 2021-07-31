@@ -24,6 +24,7 @@ Babel is a JavaScript compiler
 for more information [clic here](https://babeljs.io/)
 
 `npm install --save-dev jest babel-jest @babel/preset-env`
+
 `npm install --save-dev @babel/core @babel/node`
 
 #### Inquirer.JS
