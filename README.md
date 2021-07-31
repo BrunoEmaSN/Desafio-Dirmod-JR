@@ -20,7 +20,7 @@ for more information [clic here](https://jestjs.io/)
 `npm install --save-dev jest`
 
 #### Babel
-Babel is a JavaScript compiler
+Babel is a JavaScript compiler.
 for more information [clic here](https://babeljs.io/)
 
 `npm install --save-dev jest babel-jest @babel/preset-env`
@@ -32,3 +32,13 @@ A collection of common interactive command line user interfaces.
 for more information [clic here](https://github.com/SBoudrias/Inquirer.js)
 
 `npm i inquirer`
+
+### How to usage
+
+run on console
+
+`npm start`
+
+run test
+
+`npm test`
