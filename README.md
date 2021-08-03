@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The Spanish alphabet contains 26 characters and mobile phones only have ten digits on the keypad. Multiple letters are mapped to each number key, as shown in the image below, so that a message can be typed with repetitive keystrokes. For example, to insert the character B, press 22. To enter a sequence of two characters from the same key, the user must pause before pressing the button a second time. For example, 2 2 indicates AA while 22 indicates B (a "space character" is displayed to indicate a pause).
+The Spanish alphabet contains 26 characters and mobile phones only have ten digits on the keypad. Multiple letters are mapped to each number key, so that a message can be typed with repetitive keystrokes. For example, to insert the character B, press 22. To enter a sequence of two characters from the same key, the user must pause before pressing the button a second time. For example, 2 2 indicates AA while 22 indicates B (a "space character" is displayed to indicate a pause).
 
 Desafio-Dirmod-JR calculates the sequence of keys to press to write a certain message.
 
