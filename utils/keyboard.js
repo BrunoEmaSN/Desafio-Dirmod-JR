@@ -20,15 +20,12 @@ export default class Keyboard {
             }
             for(let j = 1; j <= typeKeyboard; j++){
                 let letters = (count + 10).toString(36).toUpperCase();
-                keyboards[letters] = {
-                    key: i,
-                    value: this.repeatValues(i, j)
-                };
+                keyboards[letters] = this.repeatValues(i, j);
                 count++;
             }
         }
 
-        keyboards[' '] = { key: 0, value: 0 };
+        keyboards[' '] = 0;
         return keyboards;
     }
 
@@ -49,17 +46,17 @@ export default class Keyboard {
         for(let i = 0; i < letters.length; i++){
             if(alphabet[letters[i]] === undefined) throw new Error('only letters are allowed');
             if(i > 0){
-                let key1 = alphabet[letters[i]].key;
-                let key2 = alphabet[letters[i - 1]].key;
+                let key1 = alphabet[letters[i]][0];
+                let key2 = alphabet[letters[i - 1]][0];
                 if(key1 === key2){
-                    result += ' ' + alphabet[letters[i]].value;
+                    result += ' ' + alphabet[letters[i]];
                 }
                 else{
-                    result += alphabet[letters[i]].value;
+                    result += alphabet[letters[i]];
                 }
             }
             else{
-                result += alphabet[letters[i]].value;
+                result += alphabet[letters[i]];
             }
         }
         return result;    
